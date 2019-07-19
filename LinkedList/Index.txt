@@ -1,0 +1,11 @@
+Important ideas about LinkedList problems
+
+1. Brute force solutions usually require O(n) space in case of linked lists. Optimized versions usually do this work "in-place" to make it O(1) 
+
+2. Often linkedlist problems are more about "clean-coding" and less about "algorithmic complexity". This is because they are simple.
+
+3. Use "dummy nodes" to forgo "Null checks". For instance in a case where operation needs to be done on a node (which could be null), we use dummy node (with dummy value), such that we don't have to do the "null check". Kinda like using optional in java, instead of doing null checks we pass something that doesn't throw an error (it handles null cases)
+
+4. It is easy to forget to update next and previous of "head and tail", i.e. corner cases
+
+5. Algorithms operating on singly linked list benefit from fast and slow iterators.

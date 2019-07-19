@@ -1,0 +1,27 @@
+1. Stack using Linked list
+	Push - O(1)
+	Pop - O(1)
+2. Stack using Array - static size of stack
+	Push - O(1) - by keeping track of the top element (index)
+	Pop - O(1)
+3. Stack using "dynamically resized array"
+	Push - O(1) - Amortized
+	Pop - O(1) - Amortized
+4. What is amortized time complexity????
+5. Deque? - Deque is double ended queue that allows insert and delete at both ends, which makes it possible to use it as a stack or as a queue.
+
+
+When to use stack?
+- parsing questions
+
+We know that linkedlist is O(1) for stack stuff, but is deque a good class for queue stuff as well. 
+
+Queue is LIFO, does that mean enqueue operation becomes O(n) if we use linked list?
+- NO. because if we keep track of "tail", we can do enqueue in O(1). So if we are using LinkedList provided by java, as a standard library then enqueue is O(1) because linkedlist in java.util keeps track of last element as well.
+
+
+In stack - deque using linked list
+push - addFirst
+pop - removeFirst - throws NoSuchElementException if deque is empty.
+peek - peekFirst - if stack is empty, returns null
+isEmpty - is a better test for an empty Stack, rather than checking for null.

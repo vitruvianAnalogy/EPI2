@@ -1,0 +1,8 @@
+1. Learn how to use Iterator interface
+2. Learn methods of List interface.
+3. Learn methods of Collections class
+4. Learn about Arrays.asList()
+5. equals vs deepEquals - Arrays API
+6. Iterator vs ListIterator
+7. What is a Spliterator class
+8. What is a UnaryOperator class
