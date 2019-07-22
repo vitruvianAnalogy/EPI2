@@ -15,8 +15,22 @@ public static class Queue{
 			entries = Arrays.copyOf(entries, numQueueElements + SCALE_FACTOR);
 		}
 
-		entries[tail] = x;
+		entries[tail] = n;
 		tail = (tail + 1) % entries.length;
 		++numQueueElements;
+	}
+
+	public Integer dequeue(){
+		if(numQueueElements != 0){
+			--numQueueElements;
+			Integer ret = entries[head];
+			head = (head+1)%entries.length;
+			return ret;
+		}
+		System.out.println("Queue is empty");
+	}
+
+	public int size(){
+		return numQueueElements;
 	}
 }
