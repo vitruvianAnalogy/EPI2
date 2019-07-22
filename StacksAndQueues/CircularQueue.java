@@ -21,7 +21,17 @@ public class CircularQueue{
 			System.out.println("Queue is empty");
 			return;
 		}
-		array[end] = 0;
+		if(end == 0){
+			array[end] = 0;
+			end--;
+			return;
+		}
+
+		int temp = start;
+		while(temp < end){
+			array[temp] = array[temp+1];
+			temp++;
+		}
 		end--;
 	}
 
