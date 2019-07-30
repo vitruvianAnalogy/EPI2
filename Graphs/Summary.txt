@@ -1,0 +1,5 @@
+- DFS 
+	- works well for "ANALYZING" structures. Looking for cycles etc.
+- BFS
+	- compute distances from the start vertex
+- BFS, Djikstra and minimum spanning tree are good for "OPTIMIZATION" problems
