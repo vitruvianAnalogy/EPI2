@@ -1,0 +1,25 @@
+1. Binary tree are appropriate to deal with hierarchies
+2. Depth goes from "0-height", i.e. the deepest node represent the height of a tree
+3. A single node means 0 depth and 0 height
+4. In binary trees, there is a "unique" search path between root and and each node, in graphs since there are many other connections, there could be multiple search paths which aren't unique.
+5. A node is an ancestor and descendant of itself
+
+6. "Full Binary tree" - each node other than leaves has two children - because ofcoursee if leaves have children then it doesn't mean it is a leaf.
+
+7. "Perfect binary tree" - is a full binary tree where all leaves are at the same depth. A PBT of height h contains 2^(h+1) - 1 node of which 2^h are leaves
+
+8. "Complete binary tree" - is a binary tree where each level except possibly the last is completely filled, and all nodes are as far left as possible. A CBT with n nodes has height of floor(log n)
+
+9. Left-skewed tree - no node has right child
+10. Right-skewed tree - no node has left child
+
+11. Inorder - Left, Root, Right
+12. Preorder - Root, Left, Right
+13. Postorder - Left, Right, Root
+
+
+The time complexity of Inorder, preorder and postorder 
+	- is O(n) where n is number of nodes in the tree, because each node is visited
+
+The space complexity of Inorder, preorder and postorder
+	- is O(k) where k is height, because each node is recursively visited, until the deepest node is reached and deepest node is at height h, so at a time h nodes are being stored in memory.
