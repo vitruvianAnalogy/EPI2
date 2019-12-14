@@ -1,0 +1,30 @@
+Problem statement:
+1.	Input 1: A misspelled string
+2.	Input 2: A list of words in the dictionary
+3.	Levenshtein distance – the number of “edits” it will take to change a misspelled word into the correctly spelled word.
+4.	Edit – Insertion, Deletion, Substitution
+5.	Write a program to calculate the minimum number of edits needed to transform one word to another.
+
+How will I do it?
+1.	I will find how two words differ.
+2.	For ex: Sunday and Saturday
+3.	Calculate the length
+a.	Sunday’s length = 6
+b.	Saturday’s length = 8
+4.	This means if length is equal, we can rule out substitution, but can we
+a.	Sunday and Senday
+b.	The minimum edit would mean 
+i.	Replace e with u
+ii.	So, minimum edits = 1.
+c.	Therefore, we can’t rule out substitution.
+5.	Let’s start with brute force
+a.	Iterate both strings and find the first difference in the alphabet.
+b.	When first letter differs, we can either do
+i.	Insertion
+ii.	Substitution
+iii.	Deletion
+c.	But how would be know which is the minimum edit path
+d.	I got it! Since we are making choices, dynamic programming make sense.
+e.	The keyword is CHOICES
+f.	So, we’ll make a choice and then we’ll calculate which choice leads to least number of edits, meaning we’ll need to store the number of edits
+6.	Since we don’t need to know which type of “edit” is happening, only that it is happening, we can forget just store the number of edits.

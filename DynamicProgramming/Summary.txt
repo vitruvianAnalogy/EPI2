@@ -1,0 +1,48 @@
+DP solves three kinds of problems
+1. Counting
+2. Search
+3. Optimizations
+
+
+The technique decomposes problems into subproblems.
+
+
+Use it whenever you need to make "CHOICES" to come to a solution
+
+
+DP vs Divide and conquer
+- In DP same subproblem may occur
+- We can cache the solution of a subproblem that has occurred before
+
+
+For instance, fibonacci
+- We are using f(n) = f(n-1) + f(n-2) again and again.
+- Every fibonacci problem can be represented in a function, a repeatable function
+- Some of these f(n) are computed multiple times
+- We can cache those to optimize DP
+- Fibonacci without DP is exponential but with DP becomes linear with O(n) space
+
+
+CACHE SPACE
+- is a recurring theme in DP. 
+- We optimize time complexity by sacrificing space complexity
+- There are ways to optimize the space usage.
+- Solving a DP problem in bottom up ways, help us solve a problem and 're'use the space.
+- In case of top down fibonacci f(3) can help solve both f(4) and f(5)
+- In case of bottom up fibonacci, once f(3) has been used, i.e. once f(4) and f(5) have been calculated, we don't need f(3). we can reuse that space.
+
+
+KEY TO SOLVING DP PROBLEMS
+- Original problem can be solved by using the solutions of the sub-problems.
+- Solution of sub-problem is cached.
+
+When to use DP
+- Making choices
+- counting
+- decision problems
+
+
+Note:
+1. Everytime we make a 2D array for memoization.
+2. Every time we take a step, we make a choice and the recurrence relation
+is a function of that choice.

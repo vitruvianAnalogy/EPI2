@@ -1,0 +1,14 @@
+1. Signedness
+2. Precision
+3. Width of a type - number of bits of storage
+In java int is always 32 bit
+
+4. Sizes
+5. Ranges
+6. Signedness
+7. java.util.Math
+8. Box types vs primitives
+9. How to use masks in "machine independent" way
+10. Autoboxing and its limits
+11. Why Character[] c = new char[]{'a','b'}; won't compile. limits of autoboxing
+ 
