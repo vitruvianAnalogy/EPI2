@@ -1,0 +1,4 @@
+Scenarios
+1. Given "sorted arrays" or "linked lists"
+2. Find a set of elements that fulfill certain constraints
+2.1 Set of elements could be a "pair", "triplets" or even a "subarray"
