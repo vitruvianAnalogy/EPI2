@@ -8,7 +8,7 @@ class ListNode{
         this.value = value;
     }
 }
-public class ProblemONELinkedListCycle {
+public class LinkedListCycle {
     public static boolean hasCycle(ListNode head){
         ListNode slow = head;
         ListNode fast = head;
