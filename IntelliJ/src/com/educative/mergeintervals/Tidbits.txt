@@ -1,0 +1,8 @@
+Given two intervals there are 6 ways they interact with each other
+1. They don't overlap. a starts and finishes, then b starts and finishes.
+2. Overlap. b ends after a --> a starts, b starts, a ends. b ends.
+3. Overlap. a completely overlap b --> a starts, b starts, b ends, a ends.
+
+4. Overlap. a ends after b --> b starts, a starts, b ends, a ends.
+5. Overlap. b completely overlaps a --> b starts, a starts, a ends, b ends
+6. They don't overlap. b starts and finishes, then a starts and finishes
